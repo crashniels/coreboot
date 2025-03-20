@@ -1,0 +1,4 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+config BOARD_GIGABYTE_TECHNOLOGY_CO.__LTD_TO_BE_FILLED_BY_O.E.M
+	bool "To be filled by O.E.M."

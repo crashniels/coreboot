@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config BOARD_ASUS_GA402RJ
+	select BOARD_ROMSIZE_KB_32768
+	select SOC_AMD_MENDOCINO
+
+if BOARD_ASUS_GA402RJ
+
+config MAINBOARD_DIR
+	default "asus/ga402rj"
+
+config MAINBOARD_PART_NUMBER
+	default "ga402rj"
+
+config FMDFILE
+	default "src/mainboard/\$(CONFIG_MAINBOARD_DIR)/coreboot.fmd"
+
+endif

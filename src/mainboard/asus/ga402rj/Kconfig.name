@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: GPL-2.0-only
+
+config BOARD_ASUS_GA402RJ
+	bool "GA402RJ (Zephyrus G14 2022)"

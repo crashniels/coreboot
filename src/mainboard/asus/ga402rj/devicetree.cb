@@ -3,6 +3,49 @@
 chip soc/amd/mendocino
 
 	device domain 0 on
+		device ref gnb	on
+			subsystemid 0x1022 0x14b5
+		end
+		device ref iommu	on
+			subsystemid 0x1022 0x14b6
+		end
+		device pci 01.0 on end # Dummy device
+		device pci 01.1 on # PCI Bridge
+			subsystemid 0x1043 0x1d42
+		end
+		device pci 02.0 on end # Dummy device
+		device ref gpp_bridge_0	on
+			subsystemid 0x1043 0x1d42
+		end
+		device ref gpp_bridge_1	on
+			subsystemid 0x1043 0x1d42
+		end
+		device ref gpp_bridge_3	on
+			subsystemid 0x1043 0x1d42
+		end
+		device pci 03.0 on end # PCIe Dummy Host Bridge
+		device pci 04.0 on end # PCIe Dummy Host Bridge
+		device pci 08.0 on end # PCIe Dummy Host Bridge
+		device ref gpp_bridge_a	on
+			subsystemid 0x1022 0x14b9
+		end
+		device ref gpp_bridge_c	on
+			subsystemid 0x1022 0x14b9
+		end
+		device ref smbus	on
+			subsystemid 0x1043 0x1d42
+		end
+		device ref lpc_bridge	on
+			subsystemid 0x1043 0x1d42
+		end
+		device ref data_fabric_0 on end
+		device ref data_fabric_1 on end
+		device ref data_fabric_2 on end
+		device ref data_fabric_3 on end
+		device ref data_fabric_4 on end
+		device ref data_fabric_5 on end
+		device ref data_fabric_6 on end
+		device ref data_fabric_7 on end
 	end # domain
 
 end	# chip soc/amd/mendocino

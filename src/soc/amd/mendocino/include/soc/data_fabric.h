@@ -44,7 +44,7 @@ union df_pci_cfg_map {
 #define DF_IO_REG_COUNT			12
 #define DF_IO_BASE(reg)			((reg) < 8 ? DF_IO_BASE_0_7(reg) : \
 						DF_IO_BASE8 + ((reg) - 8) * sizeof(uint32_t))
-#define DF_IO_LIMIT(reg)		((reg) < 8 ? DF_IO_LIMIT_0_70(reg) : \
+#define DF_IO_LIMIT(reg)		((reg) < 8 ? DF_IO_LIMIT_0_7(reg) : \
 						DF_IO_LIMIT8 + ((reg) - 8) * sizeof(uint32_t))
 #else
 #define DF_IO_REG_COUNT			8

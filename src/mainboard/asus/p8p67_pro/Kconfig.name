@@ -1,0 +1,4 @@
+## SPDX-License-Identifier: GPL-2.0-only
+
+config BOARD_SYSTEM_MANUFACTURER_SYSTEM_PRODUCT_NAME
+	bool "System Product Name"
